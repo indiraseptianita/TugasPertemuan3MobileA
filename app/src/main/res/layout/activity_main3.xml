@@ -35,14 +35,11 @@
         android:textColor="#ffffff"
         android:textSize="40dp"
         android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.021" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="320dp"
         android:layout_height="34dp"
         android:fontFamily="sans-serif-light"
@@ -50,53 +47,43 @@
         android:textColor="#000"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.416"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.148" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:layout_width="371dp"
-        android:layout_height="310dp"
+        android:layout_height="0dp"
         android:fontFamily="sans-serif-light"
         android:text=" Siapapun Anda, apapun profesi Anda, Anda harus memperhatikan sifat jangan mudah menyerah. Karena harus Anda sadari bahwa dalam setiap perjalanan hidup, pasti kita akan dihadapakan dengan berbagai masalah, yang kadang-kadang memang sangat berat. Namun, yakinlah bahwa di dalam sebuah masalah yang berat tersebut pasti ada hikmah yang kadang kita tidak akan mengerti sebelum kita menghadapi masalah tersebut. Maka dari itu, hadapi masalah tersebut dengan lapang dan penuh semangat, jangan menjadi orang yang mudah menyerah.Nikmatilah prosesmu sendiri meskipun panjang, yang sukses duluan mungkin perjuangannya lebih sepadan.Jangan dulu iri, mungkin bahagiamu bukan ada di sana, yang terbaik untukmu telah Allah bungkuskan dengan rapi, takdir-Nya selalu indah pada waktunya, percayalah, kita hanya bisa berjuang, berdoa dan berusaha"
         android:textColor="#656338"
         android:textSize="10dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.352"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.538" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
+        android:id="@+id/button2"
         android:layout_width="258dp"
         android:layout_height="68dp"
+        android:layout_marginBottom="4dp"
         android:onClick="move"
         android:text="Beranda"
         android:textSize="35dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.983"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.98" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
+        android:id="@+id/button3"
         android:layout_width="233dp"
         android:layout_height="67dp"
         android:onClick="pindah"
         android:text="Biodata"
-        android:textSize="35dp"
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.864" />
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
